@@ -2,7 +2,12 @@ package com.project.service.model;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Getter;
+import lombok.Setter;
 
+
+@Getter
+@Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class BaseModel {
     private Boolean result;
@@ -19,28 +24,6 @@ public class BaseModel {
         this.message = message;
     }
 
-    public Boolean getResult() {
-        return result;
-    }
 
-    public void setResult(Boolean result) {
-        this.result = result;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
 
 }
